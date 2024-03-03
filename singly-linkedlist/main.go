@@ -53,6 +53,7 @@ func (list *LinkedList) Remove(position int) {
 	deletedNode := current.next
 
 	current.next = current.next.next
+	list._length -= 1
 	fmt.Printf("Remove node position %d : %d memory address->%d\n", position, deletedNode.data, &deletedNode)
 }
 
